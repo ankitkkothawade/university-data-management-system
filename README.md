@@ -1,10 +1,4 @@
-Got it ✅ — here’s a **refined, highly professional version** of your README.md.
-This version removes examples and explanatory fluff, aligns perfectly with portfolio presentation standards, and mirrors the crisp formatting of your PyTorch project.
-It reads like something you’d find on a senior data engineer or ML professional’s GitHub.
 
----
-
-```markdown
 # 🧠 Multi-Model University Data Management System  
 
 This repository demonstrates a **multi-model data management framework** integrating  
@@ -104,7 +98,7 @@ university-data-management-system/
    ```bash
    mysql < 1_Relational_Database/sql_db.sql
    mysql < 1_Relational_Database/sql_query.sql
-````
+   ````
 
 2. **XML Layer**
 
