@@ -1,0 +1,56 @@
+xml xquery answers
+
+1.  List the ID and name of all students.
+
+for $s in /university/students/student
+return <student>{$s/student_id, $s/name}</student>
+
+2. List the name of all courses together with their type. 
+
+
+for $c in /university/courses/course
+return <course>{$c/course_name, $c/course_type}</course>
+
+3. List the ID and name of all students together with the course name and course type that 
+they study. 
+
+for $s in /university/students/student,
+$c in /university/courses/course
+where $s/course_id = $c/course_id
+return <student>{$s/student_id, $s/name, $c/course_name, $c/course_type}</student>
+
+4. List the ID and name of all modules together with the name and ID of the member of 
+staff who teaches this module.   
+
+for $m in /university/modules/module
+	let $lecturer := /university/module_lecturers/module_lecturer[module_id = $m/module_id]/academic_employee_id
+	let $staff := /university/employees/employee[employee_id = $lecturer]
+	return 
+	  <module>
+	    <module_id>{data($m/module_id)}</module_id>
+	    <module_name>{data($m/module_name)}</module_name>
+	    <lecturer>
+	      <staff_id>{data($staff/employee_id)}</staff_id>
+	      <staff_name>{data($staff/name)}</staff_name>
+	    </lecturer>
+	  </module>
+
+
+5. List the ID and name of all students together with the name of their supervisors if their 
+supervisors has an admin role in addition to their academic role.
+
+for $s in /university/students/student
+let $supervisor := /university/employees/employee[employee_id = $s/supervisor_id]
+let $is_academic := /university/academicemployees/academicemployee[employee_id = $s/supervisor_id]
+let $is_admin := /university/adminemployees/adminemployee[employee_id = $s/supervisor_id]
+where $is_academic and $is_admin
+return 
+  <student>
+    <student_id>{data($s/student_id)}</student_id>
+    <student_name>{data($s/name)}</student_name>
+    <supervisor>
+      <supervisor_id>{data($supervisor/employee_id)}</supervisor_id>
+      <supervisor_name>{data($supervisor/name)}</supervisor_name>
+    </supervisor>
+  </student>
+

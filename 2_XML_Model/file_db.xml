@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE university [
+    <!ELEMENT university (offices, employees, academicemployees, adminemployees, students, modules, courses, course_modules, exam_records, module_lecturers, employee_offices)>
+
+    <!ELEMENT offices (office*)>
+    <!ELEMENT office (office_id, office_location)>
+    <!ELEMENT office_id (#PCDATA)>
+    <!ELEMENT office_location (#PCDATA)>
+
+    <!ELEMENT employees (employee*)>
+    <!ELEMENT employee (employee_id, name, office_id)>
+    <!ELEMENT employee_id (#PCDATA)>
+    <!ELEMENT name (#PCDATA)>
+
+    <!ELEMENT academicemployees (academicemployee*)>
+    <!ELEMENT academicemployee (employee_id, academic_role)>
+    <!ELEMENT academic_role (#PCDATA)>
+
+    <!ELEMENT adminemployees (adminemployee*)>
+    <!ELEMENT adminemployee (employee_id, admin_role)>
+    <!ELEMENT admin_role (#PCDATA)>
+
+    <!ELEMENT students (student*)>
+    <!ELEMENT student (student_id, name, course_id, supervisor_id)>
+    <!ELEMENT student_id (#PCDATA)>
+    <!ELEMENT course_id (#PCDATA)>
+    <!ELEMENT supervisor_id (#PCDATA)>
+
+    <!ELEMENT modules (module*)>
+    <!ELEMENT module (module_id, module_name, credit, is_compulsory)>
+    <!ELEMENT module_id (#PCDATA)>
+    <!ELEMENT module_name (#PCDATA)>
+    <!ELEMENT credit (#PCDATA)>
+    <!ELEMENT is_compulsory (#PCDATA)>
+
+    <!ELEMENT courses (course*)>
+    <!ELEMENT course (course_id, course_name, course_type)>
+    <!ELEMENT course_name (#PCDATA)>
+    <!ELEMENT course_type (#PCDATA)>
+
+    <!ELEMENT course_modules (course_module*)>
+    <!ELEMENT course_module (course_id, module_id)>
+
+    <!ELEMENT exam_records (exam_record*)>
+    <!ELEMENT exam_record (student_id, module_id, semester, year, mark)>
+    <!ELEMENT semester (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+    <!ELEMENT mark (#PCDATA)>
+
+    <!ELEMENT module_lecturers (module_lecturer*)>
+    <!ELEMENT module_lecturer (module_id, academic_employee_id)>
+    <!ELEMENT academic_employee_id (#PCDATA)>
+
+    <!ELEMENT employee_offices (employee_office*)>
+    <!ELEMENT employee_office (employee_id, office_id)>
+]>
+
+<university>
+    <offices>
+        <office><office_id>1</office_id><office_location>Livingstone Tower - Room 101</office_location></office>
+        <office><office_id>2</office_id><office_location>Graham Hills Building - Room 202</office_location></office>
+        <office><office_id>3</office_id><office_location>Cathedral Street Wing - Room 303</office_location></office>
+        <office><office_id>4</office_id><office_location>Library - Room 404</office_location></office>
+        <office><office_id>5</office_id><office_location>James Weir - Room 505</office_location></office>
+    </offices>
+
+    <employees>
+        <employee><employee_id>101</employee_id><name>Keith Smith</name><office_id>1</office_id></employee>
+        <employee><employee_id>102</employee_id><name>Abdul Salam Kalaji</name><office_id>2</office_id></employee>
+        <employee><employee_id>103</employee_id><name>Yashar Moshfeghi</name><office_id>3</office_id></employee>
+        <employee><employee_id>104</employee_id><name>Feng Dong</name><office_id>4</office_id></employee>
+        <employee><employee_id>105</employee_id><name>Zakia Majid</name><office_id>5</office_id></employee>
+    </employees>
+
+    <academicemployees>
+        <academicemployee><employee_id>101</employee_id><academic_role>Professor</academic_role></academicemployee>
+        <academicemployee><employee_id>102</employee_id><academic_role>Senior Lecturer</academic_role></academicemployee>
+        <academicemployee><employee_id>103</employee_id><academic_role>Assistant Professor</academic_role></academicemployee>
+        <academicemployee><employee_id>104</employee_id><academic_role>Lecturer</academic_role></academicemployee>
+    </academicemployees>
+
+    <adminemployees>
+        <adminemployee><employee_id>103</employee_id><admin_role>Department Head</admin_role></adminemployee>
+        <adminemployee><employee_id>104</employee_id><admin_role>Administrator</admin_role></adminemployee>
+        <adminemployee><employee_id>105</employee_id><admin_role>HR Manager</admin_role></adminemployee>
+    </adminemployees>
+
+    <students>
+        <student><student_id>201</student_id><name>Ankit</name><course_id>1</course_id><supervisor_id>101</supervisor_id></student>
+        <student><student_id>202</student_id><name>Paresh</name><course_id>2</course_id><supervisor_id>102</supervisor_id></student>
+       <student><student_id>203</student_id><name>Roshan</name><course_id>3</course_id><supervisor_id>103</supervisor_id></student>
+        <student><student_id>204</student_id><name>Himanshu</name><course_id>4</course_id><supervisor_id>104</supervisor_id></student>
+        <student><student_id>205</student_id><name>Krunal</name><course_id>5</course_id><supervisor_id>103</supervisor_id></student>
+
+    </students>
+
+    <modules>
+        <module><module_id>CS101</module_id><module_name>Introduction to Programming</module_name><credit>10</credit><is_compulsory>TRUE</is_compulsory></module>
+        <module><module_id>CS102</module_id><module_name>Database Systems</module_name><credit>20</credit><is_compulsory>TRUE</is_compulsory></module>
+        <module><module_id>CS103</module_id><module_name>AI For Finance</module_name><credit>10</credit><is_compulsory>FALSE</is_compulsory></module>
+        <module><module_id>CS104</module_id><module_name>Machine Learning</module_name><credit>20</credit><is_compulsory>FALSE</is_compulsory></module>
+        <module><module_id>CS105</module_id><module_name>Project</module_name><credit>60</credit><is_compulsory>TRUE</is_compulsory></module>
+    </modules>
+
+    <courses>
+        <course><course_id>1</course_id><course_name>BSc Computer Science </course_name><course_type>undergrad</course_type></course>
+        <course><course_id>2</course_id><course_name>BSc Information Technology </course_name><course_type>undergrad</course_type></course>
+        <course><course_id>3</course_id><course_name>MSc Data Science </course_name><course_type>postgrad</course_type></course>
+        <course><course_id>4</course_id><course_name>Msc Software Engineering</course_name><course_type>postgrad</course_type></course>
+        <course><course_id>5</course_id><course_name>MSc Cybersecurity</course_name><course_type>postgrad</course_type></course>
+
+    </courses>
+
+    <course_modules>
+        <course_module><course_id>1</course_id><module_id>CS101</module_id></course_module>
+        <course_module><course_id>2</course_id><module_id>CS102</module_id></course_module>
+        <course_module><course_id>3</course_id><module_id>CS103</module_id></course_module>
+        <course_module><course_id>4</course_id><module_id>CS104</module_id></course_module>
+        <course_module><course_id>5</course_id><module_id>CS105</module_id></course_module>
+    </course_modules>
+
+    <exam_records>
+        <exam_record><student_id>201</student_id><module_id>CS101</module_id><semester>1</semester><year>2024</year><mark>85</mark></exam_record>
+        <exam_record><student_id>202</student_id><module_id>CS102</module_id><semester>1</semester><year>2024</year><mark>78</mark></exam_record>
+        <exam_record><student_id>203</student_id><module_id>CS103</module_id><semester>1</semester><year>2024</year><mark>92</mark></exam_record>
+        <exam_record><student_id>204</student_id><module_id>CS104</module_id><semester>1</semester><year>2024</year><mark>65</mark></exam_record>
+        <exam_record><student_id>205</student_id><module_id>CS105</module_id><semester>1</semester><year>2024</year><mark>55</mark></exam_record>
+    </exam_records>
+
+    <module_lecturers>
+        <module_lecturer><module_id>CS101</module_id><academic_employee_id>101</academic_employee_id></module_lecturer>
+        <module_lecturer><module_id>CS102</module_id><academic_employee_id>102</academic_employee_id></module_lecturer>
+        <module_lecturer><module_id>CS103</module_id><academic_employee_id>103</academic_employee_id></module_lecturer>
+        <module_lecturer><module_id>CS104</module_id><academic_employee_id>104</academic_employee_id></module_lecturer>
+        <module_lecturer><module_id>CS105</module_id><academic_employee_id>103</academic_employee_id></module_lecturer>
+    </module_lecturers>
+
+    <employee_offices>
+        <employee_office><employee_id>101</employee_id><office_id>1</office_id></employee_office>
+        <employee_office><employee_id>102</employee_id><office_id>2</office_id></employee_office>
+        <employee_office><employee_id>103</employee_id><office_id>3</office_id></employee_office>
+        <employee_office><employee_id>104</employee_id><office_id>4</office_id></employee_office>
+        <employee_office><employee_id>105</employee_id><office_id>5</office_id></employee_office>
+    </employee_offices>
+</university>
+
+

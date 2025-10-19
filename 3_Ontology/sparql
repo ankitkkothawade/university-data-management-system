@@ -1,0 +1,82 @@
+SPARQL Query answers
+
+1.List the ID and name of all students. 
+
+
+PREFIX asg: <http://www.semanticweb.org/paresh/ontologies/2025/2/assignment#>
+
+SELECT ?studentID ?studentName
+WHERE {
+  ?student rdf:type asg:Student .
+  ?student asg:Student_ID ?studentID .
+  ?student asg:Student_Name ?studentName .
+}
+
+
+2. List the name of all courses together with their type. 
+
+PREFIX asg: <http://www.semanticweb.org/paresh/ontologies/2025/2/assignment#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?courseName ?courseType
+WHERE {
+  ?course asg:Course_Name ?courseName .
+  ?course asg:Course_Type ?courseType .
+}
+
+
+3. List the ID and name of all students together with the course name and course type that 
+they study.
+
+PREFIX asg: <http://www.semanticweb.org/paresh/ontologies/2025/2/assignment#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+SELECT ?studentID ?studentName ?courseName ?courseType
+WHERE {
+  ?student rdf:type asg:Student .
+  ?student asg:Student_ID ?studentID .
+  ?student asg:Student_Name ?studentName .
+  ?student asg:hasCourse ?course .
+  ?course rdf:type asg:Course .  
+  ?course asg:Course_Name ?courseName .
+  ?course asg:Course_Type ?courseType .
+}
+
+4. List the ID and name of all modules together with the name and ID of the member of 
+staff who teaches this module.   
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX assignment: <http://www.semanticweb.org/paresh/ontologies/2025/2/assignment#>
+
+SELECT ?moduleCode ?moduleName ?staffID ?staffName
+WHERE {
+  ?module rdf:type assignment:Module .
+  ?module assignment:Module_Code ?moduleCode .
+  ?module assignment:Module_Name ?moduleName .
+ 
+  ?staff assignment:teachesModule ?module .
+  ?staff assignment:ID ?staffID .
+  ?staff assignment:Name ?staffName .
+}
+
+ 
+5. List the ID and name of all students together with the name of their supervisors if their 
+supervisors has an admin role in addition to their academic role. 
+
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX assignment: <http://www.semanticweb.org/paresh/ontologies/2025/2/assignment#>
+
+SELECT ?studentID ?studentName ?supervisorName
+WHERE {
+  ?student rdf:type assignment:Student .
+  ?student assignment:Student_ID ?studentID .
+  ?student assignment:Student_Name ?studentName .
+ 
+  ?student assignment:hasSupervisor ?supervisor .
+  ?supervisor assignment:Name ?supervisorName .
+ 
+  ?supervisor assignment:hasAdminRole ?adminRole .
+}
+
+

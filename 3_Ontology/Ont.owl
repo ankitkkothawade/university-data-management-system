@@ -1,0 +1,1526 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/paresh/ontologies/2025/2/assignment"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/paresh/ontologies/2025/2/assignment">
+    <Prefix name="" IRI="http://www.semanticweb.org/paresh/ontologies/2025/2/assignment/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="assignment" IRI="http://www.semanticweb.org/paresh/ontologies/2025/2/assignment#"/>
+    <Declaration>
+        <Class IRI="#AcademicEmployee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AcademicRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdminEmployee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdminRole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompulsoryModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElectiveModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExamRecord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Module"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Office"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PostgraduateCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ProjectModule"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UndergraduateCourse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#University"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAcademicRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAdminRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEmployee"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasExamRecord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasModule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasStudent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSupervisor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAcademicRoleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAdminRoleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCourseOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isModuleOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPostgraduateCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRecordedFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isStudentOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTaughtBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isUndergraduateCourse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sharesOfficeWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#teachesModule"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#worksIn"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Course"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Course_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Course_Type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Credits"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Employee"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Exam_Record"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Marks"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Module"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Module_Code"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Module_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Office"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Role"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Semester"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Student_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Student_Name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Supervisor_ID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Type"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Administrator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Assistant_Professor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Course_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Course_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Course_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Course_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Course_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Department_Head"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee_101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee_102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee_103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee_104"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Employee_105"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExamRecord_201_CS101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExamRecord_202_CS102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExamRecord_203_CS103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExamRecord_204_CS104"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExamRecord_205_CS105"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HR_Manager"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lecturer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Module_CS101"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Module_CS102"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Module_CS103"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Module_CS104"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Module_CS105"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Office_1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Office_2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Office_3"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Office_4"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Office_5"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Professor"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Senior_Lecturer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student_201"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student_202"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student_203"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student_204"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student_205"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#AcademicEmployee"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcademicEmployee"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasRole"/>
+            <Class IRI="#AcademicRole"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcademicEmployee"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasRole"/>
+            <Class IRI="#AdminRole"/>
+        </ObjectMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AcademicRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdminEmployee"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdminEmployee"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasRole"/>
+            <Class IRI="#AdminRole"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AdminRole"/>
+        <Class IRI="#Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompulsoryModule"/>
+        <Class IRI="#Module"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Course"/>
+        <Class IRI="#University"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Course"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasModule"/>
+            <Class IRI="#CompulsoryModule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Course"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasModule"/>
+            <Class IRI="#ElectiveModule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElectiveModule"/>
+        <Class IRI="#Module"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employee"/>
+        <Class IRI="#University"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employee"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#worksIn"/>
+            <Class IRI="#Office"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExamRecord"/>
+        <Class IRI="#University"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Module"/>
+        <Class IRI="#University"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Module"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isTaughtBy"/>
+            <Class IRI="#AcademicEmployee"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Office"/>
+        <Class IRI="#University"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostgraduateCourse"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostgraduateCourse"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasModule"/>
+            <Class IRI="#ProjectModule"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostgraduateCourse"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasModule"/>
+            <Class IRI="#CompulsoryModule"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PostgraduateCourse"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasModule"/>
+            <Class IRI="#ElectiveModule"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ProjectModule"/>
+        <Class IRI="#Module"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Role"/>
+        <Class IRI="#University"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <Class IRI="#University"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasModule"/>
+            <Class IRI="#CompulsoryModule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasModule"/>
+            <Class IRI="#ElectiveModule"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isTaughtBy"/>
+            <Class IRI="#AcademicEmployee"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasCourse"/>
+            <Class IRI="#Course"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Student"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasSupervisor"/>
+            <Class IRI="#AcademicEmployee"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UndergraduateCourse"/>
+        <Class IRI="#Course"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UndergraduateCourse"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasModule"/>
+            <Class IRI="#CompulsoryModule"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UndergraduateCourse"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasModule"/>
+            <Class IRI="#ElectiveModule"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#AdminRole"/>
+        <NamedIndividual IRI="#Administrator"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicRole"/>
+        <NamedIndividual IRI="#Assistant_Professor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Course_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UndergraduateCourse"/>
+        <NamedIndividual IRI="#Course_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Course_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#UndergraduateCourse"/>
+        <NamedIndividual IRI="#Course_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Course_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostgraduateCourse"/>
+        <NamedIndividual IRI="#Course_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Course_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostgraduateCourse"/>
+        <NamedIndividual IRI="#Course_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Course"/>
+        <NamedIndividual IRI="#Course_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PostgraduateCourse"/>
+        <NamedIndividual IRI="#Course_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdminRole"/>
+        <NamedIndividual IRI="#Department_Head"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicEmployee"/>
+        <NamedIndividual IRI="#Employee_101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Employee_101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicEmployee"/>
+        <NamedIndividual IRI="#Employee_102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Employee_102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicEmployee"/>
+        <NamedIndividual IRI="#Employee_103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdminEmployee"/>
+        <NamedIndividual IRI="#Employee_103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Employee_103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicEmployee"/>
+        <NamedIndividual IRI="#Employee_104"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdminEmployee"/>
+        <NamedIndividual IRI="#Employee_104"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Employee_104"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdminEmployee"/>
+        <NamedIndividual IRI="#Employee_105"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Employee"/>
+        <NamedIndividual IRI="#Employee_105"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExamRecord"/>
+        <NamedIndividual IRI="#ExamRecord_201_CS101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExamRecord"/>
+        <NamedIndividual IRI="#ExamRecord_202_CS102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExamRecord"/>
+        <NamedIndividual IRI="#ExamRecord_203_CS103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExamRecord"/>
+        <NamedIndividual IRI="#ExamRecord_204_CS104"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExamRecord"/>
+        <NamedIndividual IRI="#ExamRecord_205_CS105"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdminRole"/>
+        <NamedIndividual IRI="#HR_Manager"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicRole"/>
+        <NamedIndividual IRI="#Lecturer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompulsoryModule"/>
+        <NamedIndividual IRI="#Module_CS101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Module_CS101"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CompulsoryModule"/>
+        <NamedIndividual IRI="#Module_CS102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Module_CS102"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ElectiveModule"/>
+        <NamedIndividual IRI="#Module_CS103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Module_CS103"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ElectiveModule"/>
+        <NamedIndividual IRI="#Module_CS104"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Module_CS104"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Module"/>
+        <NamedIndividual IRI="#Module_CS105"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ProjectModule"/>
+        <NamedIndividual IRI="#Module_CS105"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#Office_1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#Office_2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#Office_3"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#Office_4"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Office"/>
+        <NamedIndividual IRI="#Office_5"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicRole"/>
+        <NamedIndividual IRI="#Professor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AcademicRole"/>
+        <NamedIndividual IRI="#Senior_Lecturer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student_201"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student_202"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student_203"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student_204"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student_205"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasModule"/>
+        <NamedIndividual IRI="#Course_1"/>
+        <NamedIndividual IRI="#Module_CS101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasModule"/>
+        <NamedIndividual IRI="#Course_2"/>
+        <NamedIndividual IRI="#Module_CS102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasModule"/>
+        <NamedIndividual IRI="#Course_3"/>
+        <NamedIndividual IRI="#Module_CS103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasModule"/>
+        <NamedIndividual IRI="#Course_4"/>
+        <NamedIndividual IRI="#Module_CS104"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasModule"/>
+        <NamedIndividual IRI="#Course_5"/>
+        <NamedIndividual IRI="#Module_CS105"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAcademicRole"/>
+        <NamedIndividual IRI="#Employee_101"/>
+        <NamedIndividual IRI="#Professor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachesModule"/>
+        <NamedIndividual IRI="#Employee_101"/>
+        <NamedIndividual IRI="#Module_CS101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#Employee_101"/>
+        <NamedIndividual IRI="#Office_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAcademicRole"/>
+        <NamedIndividual IRI="#Employee_102"/>
+        <NamedIndividual IRI="#Senior_Lecturer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachesModule"/>
+        <NamedIndividual IRI="#Employee_102"/>
+        <NamedIndividual IRI="#Module_CS102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#Employee_102"/>
+        <NamedIndividual IRI="#Office_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAcademicRole"/>
+        <NamedIndividual IRI="#Employee_103"/>
+        <NamedIndividual IRI="#Assistant_Professor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAdminRole"/>
+        <NamedIndividual IRI="#Employee_103"/>
+        <NamedIndividual IRI="#Department_Head"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachesModule"/>
+        <NamedIndividual IRI="#Employee_103"/>
+        <NamedIndividual IRI="#Module_CS103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachesModule"/>
+        <NamedIndividual IRI="#Employee_103"/>
+        <NamedIndividual IRI="#Module_CS105"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#Employee_103"/>
+        <NamedIndividual IRI="#Office_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAcademicRole"/>
+        <NamedIndividual IRI="#Employee_104"/>
+        <NamedIndividual IRI="#Lecturer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAdminRole"/>
+        <NamedIndividual IRI="#Employee_104"/>
+        <NamedIndividual IRI="#Administrator"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#teachesModule"/>
+        <NamedIndividual IRI="#Employee_104"/>
+        <NamedIndividual IRI="#Module_CS104"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#Employee_104"/>
+        <NamedIndividual IRI="#Office_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAdminRole"/>
+        <NamedIndividual IRI="#Employee_105"/>
+        <NamedIndividual IRI="#HR_Manager"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#worksIn"/>
+        <NamedIndividual IRI="#Employee_105"/>
+        <NamedIndividual IRI="#Office_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#Student_201"/>
+        <NamedIndividual IRI="#Course_1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <NamedIndividual IRI="#Student_201"/>
+        <NamedIndividual IRI="#Employee_101"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#Student_202"/>
+        <NamedIndividual IRI="#Course_2"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <NamedIndividual IRI="#Student_202"/>
+        <NamedIndividual IRI="#Employee_102"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#Student_203"/>
+        <NamedIndividual IRI="#Course_3"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <NamedIndividual IRI="#Student_203"/>
+        <NamedIndividual IRI="#Employee_103"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#Student_204"/>
+        <NamedIndividual IRI="#Course_4"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <NamedIndividual IRI="#Student_204"/>
+        <NamedIndividual IRI="#Employee_104"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCourse"/>
+        <NamedIndividual IRI="#Student_205"/>
+        <NamedIndividual IRI="#Course_5"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <NamedIndividual IRI="#Student_205"/>
+        <NamedIndividual IRI="#Employee_103"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Course_Name"/>
+        <NamedIndividual IRI="#Course_1"/>
+        <Literal>BSc Computer Science</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Course_Type"/>
+        <NamedIndividual IRI="#Course_1"/>
+        <Literal>undergrad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Course_Name"/>
+        <NamedIndividual IRI="#Course_2"/>
+        <Literal>BSc Information Technology</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Course_Type"/>
+        <NamedIndividual IRI="#Course_2"/>
+        <Literal>undergrad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Course_Name"/>
+        <NamedIndividual IRI="#Course_3"/>
+        <Literal>MSc Data Science</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Course_Type"/>
+        <NamedIndividual IRI="#Course_3"/>
+        <Literal>postgrad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Course_Name"/>
+        <NamedIndividual IRI="#Course_4"/>
+        <Literal>MSc Software Engineering</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Course_Type"/>
+        <NamedIndividual IRI="#Course_4"/>
+        <Literal>postgrad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Course_Name"/>
+        <NamedIndividual IRI="#Course_5"/>
+        <Literal>MSc Cybersecurity</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Course_Type"/>
+        <NamedIndividual IRI="#Course_5"/>
+        <Literal>postgrad</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Employee_101"/>
+        <Literal>101</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Employee_101"/>
+        <Literal>Keith Smith</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Employee_102"/>
+        <Literal>102</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Employee_102"/>
+        <Literal>Abdul Salam Kalaji</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Employee_103"/>
+        <Literal>103</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Employee_103"/>
+        <Literal>Yashar Moshfeghi</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Employee_104"/>
+        <Literal>104</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Employee_104"/>
+        <Literal>Feng Dong</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#ID"/>
+        <NamedIndividual IRI="#Employee_105"/>
+        <Literal>105</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Name"/>
+        <NamedIndividual IRI="#Employee_105"/>
+        <Literal>Zakia Majid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Exam_Record"/>
+        <NamedIndividual IRI="#ExamRecord_201_CS101"/>
+        <Literal>CS101</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Marks"/>
+        <NamedIndividual IRI="#ExamRecord_201_CS101"/>
+        <Literal>85</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Semester"/>
+        <NamedIndividual IRI="#ExamRecord_201_CS101"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Year"/>
+        <NamedIndividual IRI="#ExamRecord_201_CS101"/>
+        <Literal>2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Exam_Record"/>
+        <NamedIndividual IRI="#ExamRecord_202_CS102"/>
+        <Literal>CS102</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Marks"/>
+        <NamedIndividual IRI="#ExamRecord_202_CS102"/>
+        <Literal>78</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Semester"/>
+        <NamedIndividual IRI="#ExamRecord_202_CS102"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Year"/>
+        <NamedIndividual IRI="#ExamRecord_202_CS102"/>
+        <Literal>2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Exam_Record"/>
+        <NamedIndividual IRI="#ExamRecord_203_CS103"/>
+        <Literal>CS103</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Marks"/>
+        <NamedIndividual IRI="#ExamRecord_203_CS103"/>
+        <Literal>92</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Semester"/>
+        <NamedIndividual IRI="#ExamRecord_203_CS103"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Year"/>
+        <NamedIndividual IRI="#ExamRecord_203_CS103"/>
+        <Literal>2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Exam_Record"/>
+        <NamedIndividual IRI="#ExamRecord_204_CS104"/>
+        <Literal>CS104</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Marks"/>
+        <NamedIndividual IRI="#ExamRecord_204_CS104"/>
+        <Literal>65</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Semester"/>
+        <NamedIndividual IRI="#ExamRecord_204_CS104"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Year"/>
+        <NamedIndividual IRI="#ExamRecord_204_CS104"/>
+        <Literal>2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Exam_Record"/>
+        <NamedIndividual IRI="#ExamRecord_205_CS105"/>
+        <Literal>CS105</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Marks"/>
+        <NamedIndividual IRI="#ExamRecord_205_CS105"/>
+        <Literal>55</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Semester"/>
+        <NamedIndividual IRI="#ExamRecord_205_CS105"/>
+        <Literal>1</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Year"/>
+        <NamedIndividual IRI="#ExamRecord_205_CS105"/>
+        <Literal>2024</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Credits"/>
+        <NamedIndividual IRI="#Module_CS101"/>
+        <Literal>10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Module_Code"/>
+        <NamedIndividual IRI="#Module_CS101"/>
+        <Literal>CS101</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Module_Name"/>
+        <NamedIndividual IRI="#Module_CS101"/>
+        <Literal>Introduction to Programming</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Credits"/>
+        <NamedIndividual IRI="#Module_CS102"/>
+        <Literal>20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Module_Code"/>
+        <NamedIndividual IRI="#Module_CS102"/>
+        <Literal>CS102</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Module_Name"/>
+        <NamedIndividual IRI="#Module_CS102"/>
+        <Literal>Database Systems</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Credits"/>
+        <NamedIndividual IRI="#Module_CS103"/>
+        <Literal>10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Module_Code"/>
+        <NamedIndividual IRI="#Module_CS103"/>
+        <Literal>CS103</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Module_Name"/>
+        <NamedIndividual IRI="#Module_CS103"/>
+        <Literal>AI For Finance</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Credits"/>
+        <NamedIndividual IRI="#Module_CS104"/>
+        <Literal>20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Module_Code"/>
+        <NamedIndividual IRI="#Module_CS104"/>
+        <Literal>CS104</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Module_Name"/>
+        <NamedIndividual IRI="#Module_CS104"/>
+        <Literal>Machine Learning</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Credits"/>
+        <NamedIndividual IRI="#Module_CS105"/>
+        <Literal>60</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Module_Code"/>
+        <NamedIndividual IRI="#Module_CS105"/>
+        <Literal>CS105</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Module_Name"/>
+        <NamedIndividual IRI="#Module_CS105"/>
+        <Literal>Project</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Student_ID"/>
+        <NamedIndividual IRI="#Student_201"/>
+        <Literal>201</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Student_Name"/>
+        <NamedIndividual IRI="#Student_201"/>
+        <Literal>Ankit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Supervisor_ID"/>
+        <NamedIndividual IRI="#Student_201"/>
+        <Literal>101</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Student_ID"/>
+        <NamedIndividual IRI="#Student_202"/>
+        <Literal>202</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Student_Name"/>
+        <NamedIndividual IRI="#Student_202"/>
+        <Literal>Paresh</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Supervisor_ID"/>
+        <NamedIndividual IRI="#Student_202"/>
+        <Literal>102</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Student_ID"/>
+        <NamedIndividual IRI="#Student_203"/>
+        <Literal>203</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Student_Name"/>
+        <NamedIndividual IRI="#Student_203"/>
+        <Literal>Roshan</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Supervisor_ID"/>
+        <NamedIndividual IRI="#Student_203"/>
+        <Literal>103</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Student_ID"/>
+        <NamedIndividual IRI="#Student_204"/>
+        <Literal>204</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Student_Name"/>
+        <NamedIndividual IRI="#Student_204"/>
+        <Literal>Himanshu</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Supervisor_ID"/>
+        <NamedIndividual IRI="#Student_204"/>
+        <Literal>104</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Student_ID"/>
+        <NamedIndividual IRI="#Student_205"/>
+        <Literal>205</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Student_Name"/>
+        <NamedIndividual IRI="#Student_205"/>
+        <Literal>Krunal</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Supervisor_ID"/>
+        <NamedIndividual IRI="#Student_205"/>
+        <Literal>103</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAcademicRole"/>
+        <ObjectProperty IRI="#hasRole"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAdminRole"/>
+        <ObjectProperty IRI="#hasRole"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAcademicRole"/>
+        <ObjectProperty IRI="#isAcademicRoleOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAdminRole"/>
+        <ObjectProperty IRI="#isAdminRoleOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCourse"/>
+        <ObjectProperty IRI="#isCourseOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasEmployee"/>
+        <ObjectProperty IRI="#worksIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasExamRecord"/>
+        <ObjectProperty IRI="#isRecordedFor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasModule"/>
+        <ObjectProperty IRI="#isModuleOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasStudent"/>
+        <ObjectProperty IRI="#isStudentOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTaughtBy"/>
+        <ObjectProperty IRI="#teachesModule"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSupervisor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isStudentOf"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#worksIn"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#sharesOfficeWith"/>
+    </SymmetricObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#hasExamRecord"/>
+    </ReflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAcademicRole"/>
+        <Class IRI="#AcademicEmployee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAcademicRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasAcademicRole"/>
+            <Class IRI="#AcademicRole"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAdminRole"/>
+        <Class IRI="#AcademicEmployee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAdminRole"/>
+        <Class IRI="#AdminEmployee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAdminRole"/>
+        <ObjectMaxCardinality cardinality="1">
+            <ObjectProperty IRI="#hasAdminRole"/>
+            <Class IRI="#AdminRole"/>
+        </ObjectMaxCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCourse"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEmployee"/>
+        <Class IRI="#Office"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasExamRecord"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasModule"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasStudent"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCourseOf"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isModuleOf"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPostgraduateCourse"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRecordedFor"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isStudentOf"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <Class IRI="#AcademicEmployee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTaughtBy"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isUndergraduateCourse"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sharesOfficeWith"/>
+        <Class IRI="#Employee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#teachesModule"/>
+        <Class IRI="#AcademicEmployee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#worksIn"/>
+        <Class IRI="#Employee"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCourse"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEmployee"/>
+        <Class IRI="#Employee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasExamRecord"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasModule"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasStudent"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSupervisor"/>
+        <Class IRI="#AcademicEmployee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAcademicRoleOf"/>
+        <Class IRI="#AcademicEmployee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAdminRoleOf"/>
+        <Class IRI="#AdminEmployee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCourseOf"/>
+        <Class IRI="#University"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isModuleOf"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPostgraduateCourse"/>
+        <Class IRI="#PostgraduateCourse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRecordedFor"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isStudentOf"/>
+        <Class IRI="#Course"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isSupervisorOf"/>
+        <Class IRI="#Student"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTaughtBy"/>
+        <Class IRI="#AcademicEmployee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isUndergraduateCourse"/>
+        <Class IRI="#UndergraduateCourse"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sharesOfficeWith"/>
+        <Class IRI="#Employee"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#teachesModule"/>
+        <Class IRI="#Module"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#worksIn"/>
+        <Class IRI="#Office"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#isPostgraduateCourse"/>
+        <ObjectProperty IRI="#isUndergraduateCourse"/>
+    </DisjointObjectProperties>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Course"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Course_Name"/>
+        <DataProperty IRI="#Course"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Course_Type"/>
+        <DataProperty IRI="#Course"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Credits"/>
+        <DataProperty IRI="#Module"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#ID"/>
+        <DataProperty IRI="#Employee"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Marks"/>
+        <DataProperty IRI="#Exam_Record"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Module"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Module_Code"/>
+        <DataProperty IRI="#Module"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Module_Name"/>
+        <DataProperty IRI="#Module"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Name"/>
+        <DataProperty IRI="#Employee"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Office"/>
+        <DataProperty IRI="#Employee"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Role"/>
+        <DataProperty IRI="#Employee"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Semester"/>
+        <DataProperty IRI="#Exam_Record"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Student_ID"/>
+        <DataProperty IRI="#Student"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Student_Name"/>
+        <DataProperty IRI="#Student"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Supervisor_ID"/>
+        <DataProperty IRI="#Student"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Type"/>
+        <DataProperty IRI="#Module"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Year"/>
+        <DataProperty IRI="#Exam_Record"/>
+    </SubDataPropertyOf>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
