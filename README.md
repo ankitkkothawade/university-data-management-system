@@ -127,7 +127,7 @@ university-data-management-system/
 **Ankit Kothawade**
 Data Science & AI | Data Engineering | Semantic Web
 
-📧 [ankitkothawade.ds@gmail.com](mailto:ankitkothawade.ds@gmail.com)
+📧 [ankitkkothawade@gmail.com](mailto:ankitkkothawade@gmail.com)
 🔗 [linkedin.com/in/ankit-kothawade](https://www.linkedin.com/in/ankit-kothawade)
 💻 [github.com/ankitkothawade](https://github.com/ankitkothawade)
 
